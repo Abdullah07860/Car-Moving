@@ -1,0 +1,89 @@
+body{
+    overflow: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sky {
+    /* height: 100vh; */
+    height: 100%;
+    width: 100%;
+    background: url('background.jpg')no-repeat center center/cover;
+    position: absolute;
+}
+
+.trees {
+    height: 100%;
+    width: 1000vw;
+    background: url('trees.png')repeat-x center ;
+    position: absolute;
+    bottom: 20vh;
+    animation: trackmove linear 20s infinite;
+
+}
+
+.track {
+    height: 75vh;
+    width: 1000vw;
+    background: url('track.png')repeat-x center ;
+    position: absolute;
+    top: 48vh;
+    animation: trackmove linear 3s infinite;
+}
+
+.car {
+    height: 100px;
+    width: 300px;
+    background: url('car_body.png')no-repeat center center/cover;
+    /* background-size: cover; */
+    position: absolute;
+    left: 300px;
+    bottom: 27vh;
+    animation: carshake linear 2s infinite;
+}
+
+.wheel1 img {
+    position: relative;
+    top: 37px;
+    left: 15px;
+    width: 67px;
+    animation: dowheelrotate linear .15s infinite;
+}
+
+.wheel2 img {
+    position: relative;
+    top: -33px;
+    left: 193px;
+    width: 67px;
+    animation: dowheelrotate linear .15s infinite;
+}
+
+/* in order to move the wheels */
+@keyframes dowheelrotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* in order to move the track backward */
+@keyframes trackmove {
+    100%{
+      transform: translateX(-600vw);
+    }
+}
+
+/* in order to move car up and down */
+@keyframes carshake {
+    0%{
+      transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

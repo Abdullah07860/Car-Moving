@@ -1,0 +1,72 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:730px) and (min-width:450px){
+.car {
+    left: 120px;
+}
+}
+
+
+@media only screen and (max-width:450px) and (min-width:340px) {
+    body{
+        overflow: hidden;
+    }
+.car {
+    height: 80px;
+    width: 260px;
+    left: 70px;
+}
+.wheel1 img {
+    top: 30px;
+    left: 24px;
+    width: 51px;
+}
+.wheel2 img{
+    top: -24px;
+    left: 164px;
+    width: 55px;
+}
+}
+
+
+@media only screen and (max-width:340px) and (min-width:250px){
+.car {
+    height: 74px;
+    width: 216px;
+    left: 37px;
+}
+.wheel1 img {
+    top: 28px;
+    left: 10px;
+    width: 46px;
+}
+.wheel2 img{
+    top: -23px;
+    left: 139px;
+    width: 50px;
+}
+}
+
+
+@media only screen and (max-width:250px){
+.car {
+    height: 56px;
+    width: 179px;
+    left: 11px;
+}
+.wheel1 img {
+    top: 21px;
+    left: 14px;
+    width: 37px;
+}
+.wheel2 img{
+    top: -21px;
+    left: 113px;
+    width: 39px;
+}
+}
